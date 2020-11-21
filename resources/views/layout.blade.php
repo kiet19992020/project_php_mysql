@@ -27,7 +27,6 @@
 </head><!--/head-->
 
 <body>
-	
 <header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -77,6 +76,7 @@
 								<?php
 								$customer_id = Session::get('customer_id');
 								$shipping_id = Session::get('shipping_id');
+
 								if($customer_id !=NULL && $shipping_id==NULL){
 
 								

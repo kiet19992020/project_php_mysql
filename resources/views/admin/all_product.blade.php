@@ -48,12 +48,12 @@
                     {
                   
                     ?>
-                      <a href="{{URL::to('/unactive-prodocut/'.$pro->product_id)}}"><span class="fa-thum-styling fa fa-thumbs-down"></span></a>
+                      <a href="{{URL::to('/unactive-prodocut/'.$pro->product_id)}}"><span class="fas fa-eye-slash"></span></a>
                     <?php  
                     }
                     else {
                       ?>
-                    <a href="{{URL::to('/active-prodocut/'.$pro->product_id)}}"><span class="fa-thum-styling fa fa-thumbs-up"></span></a>
+                    <a href="{{URL::to('/active-prodocut/'.$pro->product_id)}}"><span class="fa fas fa-eye"></span></a>
                     <?php } ?>
                     
               </span>

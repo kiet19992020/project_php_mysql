@@ -38,12 +38,12 @@
                     {
 
                     ?>
-                      <a href="{{URL::to('/unactive-brand-prodocut/'.$brand_pro->brand_id)}}"><span class="fa-thum-styling fa fa-thumbs-up"></span></a>
+                      <a href="{{URL::to('/unactive-brand-prodocut/'.$brand_pro->brand_id)}}"><span class="fas fa-eye"></i></span></a>
                     <?php
                     }
                     else {
                       ?>
-                    <a href="{{URL::to('/active-brand-prodocut/'.$brand_pro->brand_id)}}"><span class="fa-thum-styling fa fa-thumbs-down"></span></a>
+                    <a href="{{URL::to('/active-brand-prodocut/'.$brand_pro->brand_id)}}"><span class="fas fa-eye-slash"></i></span></a>
                     <?php
                     }
                     ?>

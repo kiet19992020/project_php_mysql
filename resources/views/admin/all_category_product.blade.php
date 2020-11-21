@@ -42,12 +42,12 @@
                     {
                   
                     ?>
-                      <a href="{{URL::to('/unactive-category-prodocut/'.$cate_pro->category_id)}}"><span class="fa-thum-styling fa fa-thumbs-up"></span></a>
+                      <a href="{{URL::to('/unactive-category-prodocut/'.$cate_pro->category_id)}}"><span class="fa-thum-styling fa fas fa-eye"></span></a>
                     <?php  
                     }
                     else {
                       ?>
-                    <a href="{{URL::to('/active-category-prodocut/'.$cate_pro->category_id)}}"><span class="fa-thum-styling fa fa-thumbs-down"></span></a>
+                    <a href="{{URL::to('/active-category-prodocut/'.$cate_pro->category_id)}}"><span class="fa-thum-styling fas fa-eye-slash"></span></a>
                     <?php } ?>
               </span>
               </td>

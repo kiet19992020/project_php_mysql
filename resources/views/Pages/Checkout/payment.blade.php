@@ -1,5 +1,6 @@
 @extends("layout")
 @section("content")
+
 <section id="cart_items">
     <div class="container">
         <div class="breadcrumbs">
@@ -9,7 +10,6 @@
             </ol>
         </div><!--/breadcrums-->
 
-
         <div class="review-payment">
             <h2>Xem Lại Giỏ Hàng</h2>
         </div>
@@ -18,7 +18,7 @@
                 $content = Cart::content(); 
             ?>
             <table class="table table-condensed">
-                <thead>
+                <thead class ="menu_payment">
                     <tr class="cart_menu">
                         <td class="image">Hình Ảnh</td>
                         <td class="description">Mô Tả</td>

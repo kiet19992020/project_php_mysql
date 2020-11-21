@@ -58,6 +58,7 @@ class CheckoutControler extends Controller
 
         $shipping_id = DB::table('tbl_shipping')->insertGetID($data);
         Session::put('shipping_id',$shipping_id);
+
        return Redirect('/payment');
     }
 
@@ -102,7 +103,8 @@ class CheckoutControler extends Controller
         }
         if($data['payment_method']==1){
             echo 'Thanh Toán ATM';
-        }elseif($data['payment_method']==2){
+        }
+        elseif($data['payment_method']==2){
             Cart::destroy();
             //Lấy ra tất cả danh mục Cate_product
             $cate_product = DB::table('tbl_category_product')->where('category_status','0')->orderby('category_id','desc')->get();
